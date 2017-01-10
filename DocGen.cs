@@ -52,7 +52,7 @@ namespace DocumentationGenerator
                 Console.WriteLine( t );
             }
 
-            return t.FullName.Replace( "+", "." );
+            return t.IsGenericParameter ? t.Name : t.FullName.Replace( "+", "." );
         }
 
 
